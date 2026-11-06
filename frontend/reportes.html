@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reportes · Centinela Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="informacion.html"><span class="logo"><img src="assets/logo.png" alt="Centinela Digital" onerror="this.style.display='none'"></span><span>Centinela Digital</span></a>
+  <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+  </button>
+</header>
+<nav id="menu" aria-label="Menú principal"></nav>
+<main>
+  <h1>Reportes</h1>
+  <p class="lead">Cuéntanos lo que pasó. Mientras más detalles des, mejor podremos canalizar tu caso.</p>
+  <form id="form-reporte" novalidate>
+    <div class="field"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" autocomplete="name" required></div>
+    <div class="field"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
+    <div class="field"><label for="ubicacion">Ubicación de los hechos</label><input id="ubicacion" name="ubicacion" required></div>
+    <div class="field"><label for="descripcion">Descripción detallada de la situación</label><textarea id="descripcion" name="descripcion" required></textarea></div>
+    <fieldset class="types"><legend>Selecciona el tipo de violencia</legend>
+      <label><input type="radio" name="tipo" value="Familiar"><span>Familiar</span></label>
+
+      <label><input type="radio" name="tipo" value="De género"><span>De género</span></label>
+
+      <label><input type="radio" name="tipo" value="Bullying"><span>Bullying</span></label>
+
+      <label><input type="radio" name="tipo" value="Física"><span>Física</span></label> 
+
+      <label><input type="radio" name="tipo" value="Otra"><span>Otra</span></label>
+    </fieldset>
+    <div class="actions"><button class="btn" type="submit">Enviar reporte</button><a class="btn ghost" href="seguimiento.html">Siguiente</a></div>
+    <p class="msg" role="status"></p>
+  </form>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

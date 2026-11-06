@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuestionario · Centinela Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="informacion.html"><span class="logo"><img src="assets/logo.png" alt="Centinela Digital" onerror="this.style.display='none'"></span><span>Centinela Digital</span></a>
+  <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+  </button>
+</header>
+<nav id="menu" aria-label="Menú principal"></nav>
+<main>
+  <h1>Cuestionario</h1>
+  <p class="lead">Responde con sinceridad. Tus respuestas te ayudan a conocer tu nivel de riesgo. No es un diagnóstico.</p>
+  <div class="quiz-layout">
+  <form id="form-cuestionario" novalidate>
+    <fieldset><legend>Violencia física</legend>
+      <div class="q"><span>¿Alguien te ha golpeado, empujado o lastimado?</span><div class="yn">
+        <label><input type="radio" name="fis1" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="fis1" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Has sentido miedo de que te lastimen físicamente?</span><div class="yn">
+        <label><input type="radio" name="fis2" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="fis2" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Has necesitado atención médica por una agresión?</span><div class="yn">
+        <label><input type="radio" name="fis3" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="fis3" value="no"><span>No</span></label></div></div>
+    </fieldset><fieldset><legend>Violencia psicológica o emocional</legend>
+      <div class="q"><span>¿Te insultan, humillan o te hacen sentir inferior?</span><div class="yn">
+        <label><input type="radio" name="psi1" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="psi1" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Te amenazan o te hacen sentir miedo?</span><div class="yn">
+        <label><input type="radio" name="psi2" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="psi2" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Te aíslan de tu familia o amistades?</span><div class="yn">
+        <label><input type="radio" name="psi3" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="psi3" value="no"><span>No</span></label></div></div>
+    </fieldset><fieldset><legend>Violencia sexual</legend>
+      <div class="q"><span>¿Te han obligado a actos o contactos sexuales que no querías?</span><div class="yn">
+        <label><input type="radio" name="sex1" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="sex1" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Te han tocado o presionado sin tu permiso?</span><div class="yn">
+        <label><input type="radio" name="sex2" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="sex2" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Has sentido miedo de decir que no?</span><div class="yn">
+        <label><input type="radio" name="sex3" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="sex3" value="no"><span>No</span></label></div></div>
+    </fieldset><fieldset><legend>Violencia económica</legend>
+      <div class="q"><span>¿Controlan tu dinero o no te dejan decidir sobre él?</span><div class="yn">
+        <label><input type="radio" name="eco1" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="eco1" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Te impiden trabajar o estudiar?</span><div class="yn">
+        <label><input type="radio" name="eco2" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="eco2" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Te quitan o te esconden tus documentos o pertenencias?</span><div class="yn">
+        <label><input type="radio" name="eco3" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="eco3" value="no"><span>No</span></label></div></div>
+    </fieldset><fieldset><legend>Violencia digital</legend>
+      <div class="q"><span>¿Te acosan o amenazan por redes sociales o mensajes?</span><div class="yn">
+        <label><input type="radio" name="dig1" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="dig1" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Han difundido fotos o información privada tuya sin permiso?</span><div class="yn">
+        <label><input type="radio" name="dig2" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="dig2" value="no"><span>No</span></label></div></div>
+      <div class="q"><span>¿Revisan o controlan tus cuentas y tu teléfono?</span><div class="yn">
+        <label><input type="radio" name="dig3" value="si"><span>Sí</span></label>
+        <label><input type="radio" name="dig3" value="no"><span>No</span></label></div></div>
+    </fieldset>
+    <div class="actions"><button class="btn" type="submit">Evaluar mi riesgo</button></div>
+  </form>
+  <aside class="thermo" aria-live="polite">
+    <h2>Termómetro de riesgo</h2>
+    <div class="thermo-scale"></div>
+    <p class="result msg" role="status">Responde el cuestionario para ver tu nivel.</p>
+  </aside>
+  </div>
+  <div class="alert" id="alerta" hidden><strong>Si estás en peligro inmediato, llama al 911.</strong> También puedes revisar las instituciones que pueden ayudarte.</div>
+  <div class="actions"><a class="btn ghost" href="informacion.html">Atrás</a><a class="btn" href="instituciones.html">Siguiente</a></div>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
